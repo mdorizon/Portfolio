@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>parallax background</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#">
+            <span class="headerLogoCode1"> <</span>
+            <span class="headerLogo">MDorizon</span>
+            <span class="headerLogoCode2">/></span>
+        </a>
+        <div class="headerLinksDiv">
+            <a href="#" class="theme-toggle">LIGHT MODE
+                <i class="fa-solid fa-moon"></i>
+            </a>
+            <a href="#" class="socialsButton">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" class="socialsButton">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="socialsButton">
+                <i class="fa-brands fa-dribbble"></i>
+            </a>
+        </div>
+    </header>
+    <section class="backgroundSection">
+        <img src="src/nightImg/night_sky.svg" id="nightSky" class="dark-img">
+        <img src="src/nightImg/night_moon.svg" id="moon" class="dark-img">
+        <img src="src/nightImg/night_castle.svg" id="nightCastle" class="dark-img">
+        <img src="src/nightImg/night_behind.svg" id="nightBehind" class="dark-img">
+        <img src="src/nightImg/night_front.svg" id="nightFront" class="dark-img">
+
+        <img src="src/dayImg/day_sky.svg" id="sky" class="light-img">
+        <img src="src/dayImg/day_sun.svg" id="sun" class="light-img">
+        <img src="src/dayImg/day_castle.svg" id="castle" class="light-img">
+        <img src="src/dayImg/day_behind.svg" id="behind" class="light-img">
+        <img src="src/dayImg/day_front.svg" id="front" class="light-img">
+        <img src="src/dayImg/day_sunlight.svg" id="sunLight" class="light-img">
+
+        <script>
+            let nightSky = document.getElementById('nightSky');
+            let moon = document.getElementById('moon');
+            let nightCastle = document.getElementById('nightCastle');
+            let nightBehind = document.getElementById('nightBehind');
+            let nightFront = document.getElementById('nightFront');
+
+            let sky = document.getElementById('sky');
+            let sun = document.getElementById('sun');
+            let castle = document.getElementById('castle');
+            let behind = document.getElementById('behind');
+            let front = document.getElementById('front');
+    
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                nightSky.style.top = value * 0.5 + 'px';
+                moon.style.top = value * 0.75 + 'px';
+                nightCastle.style.top = value * 0.5 + 'px';
+                nightBehind.style.top = value * 0.25 + 'px';
+                nightFront.style.top = value * 0 + 'px';
+
+                sky.style.top = value * 0.5 + 'px';
+                sun.style.top = value * 0.75 + 'px';
+                castle.style.top = value * 0.5 + 'px';
+                behind.style.top = value * 0.25 + 'px';
+                front.style.top = value * 0 + 'px';
+            })
+        </script>
+    </section>
+    <div class="sec">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt dictum porta. Morbi in vestibulum elit, sed vestibulum odio. Suspendisse potenti. Duis luctus ut magna at tempor. Duis commodo luctus dapibus. Sed massa enim, vehicula at elit a, porta pretium ante. Nunc maximus mi nec imperdiet bibendum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt dictum porta. Morbi in vestibulum elit, sed vestibulum odio. Suspendisse potenti. Duis luctus ut magna at tempor. Duis commodo luctus dapibus. Sed massa enim, vehicula at elit a, porta pretium ante. Nunc maximus mi nec imperdiet bibendum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt dictum porta. Morbi in vestibulum elit, sed vestibulum odio. Suspendisse potenti. Duis luctus ut magna at tempor. Duis commodo luctus dapibus. Sed massa enim, vehicula at elit a, porta pretium ante. Nunc maximus mi nec imperdiet bibendum.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt dictum porta. Morbi in vestibulum elit, sed vestibulum odio. Suspendisse potenti. Duis luctus ut magna at tempor. Duis commodo luctus dapibus. Sed massa enim, vehicula at elit a, porta pretium ante. Nunc maximus mi nec imperdiet bibendum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt dictum porta. Morbi in vestibulum elit, sed vestibulum odio. Suspendisse potenti. Duis luctus ut magna at tempor. Duis commodo luctus dapibus. Sed massa enim, vehicula at elit a, porta pretium ante. Nunc maximus mi nec imperdiet bibendum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt dictum porta. Morbi in vestibulum elit, sed vestibulum odio. Suspendisse potenti. Duis luctus ut magna at tempor. Duis commodo luctus dapibus. Sed massa enim, vehicula at elit a, porta pretium ante. Nunc maximus mi nec imperdiet bibendum.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt dictum porta. Morbi in vestibulum elit, sed vestibulum odio. Suspendisse potenti. Duis luctus ut magna at tempor. Duis commodo luctus dapibus. Sed massa enim, vehicula at elit a, porta pretium ante. Nunc maximus mi nec imperdiet bibendum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt dictum porta. Morbi in vestibulum elit, sed vestibulum odio. Suspendisse potenti. Duis luctus ut magna at tempor. Duis commodo luctus dapibus. Sed massa enim, vehicula at elit a, porta pretium ante. Nunc maximus mi nec imperdiet bibendum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt dictum porta. Morbi in vestibulum elit, sed vestibulum odio. Suspendisse potenti. Duis luctus ut magna at tempor. Duis commodo luctus dapibus. Sed massa enim, vehicula at elit a, porta pretium ante. Nunc maximus mi nec imperdiet bibendum.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt dictum porta. Morbi in vestibulum elit, sed vestibulum odio. Suspendisse potenti. Duis luctus ut magna at tempor. Duis commodo luctus dapibus. Sed massa enim, vehicula at elit a, porta pretium ante. Nunc maximus mi nec imperdiet bibendum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt dictum porta. Morbi in vestibulum elit, sed vestibulum odio. Suspendisse potenti. Duis luctus ut magna at tempor. Duis commodo luctus dapibus. Sed massa enim, vehicula at elit a, porta pretium ante. Nunc maximus mi nec imperdiet bibendum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt dictum porta. Morbi in vestibulum elit, sed vestibulum odio. Suspendisse potenti. Duis luctus ut magna at tempor. Duis commodo luctus dapibus. Sed massa enim, vehicula at elit a, porta pretium ante. Nunc maximus mi nec imperdiet bibendum.</p>
+    </div>
+
+    <script src="js/App.js"></script>
+</body>
+</html>
